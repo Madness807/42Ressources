@@ -19,16 +19,16 @@
 
 // Partie_1/////////////////////////////////////////////////////////////////
 
-int		ft_isascii(int c);//
-int		ft_atoi(const char *nptr);//
-int		ft_isalnum(int c);//
-int		ft_isdigit(int c);//
-int		ft_isprint(int c);//
-int		ft_isalpha(int c);//
-int		ft_tolower(int c);//
-int		ft_toupper(int c);//
-int		ft_strncmp(const char *s1, const char *s2, size_t count);//
-int		ft_memcmp(const void *lhs, const void *rhs, size_t count);//
+int	ft_isascii(int c);//
+int	ft_atoi(const char *nptr);//
+int	ft_isalnum(int c);//
+int	ft_isdigit(int c);//
+int	ft_isprint(int c);//
+int	ft_isalpha(int c);//
+int	ft_tolower(int c);//
+int	ft_toupper(int c);//
+int	ft_strncmp(const char *s1, const char *s2, size_t count);//
+int	ft_memcmp(const void *lhs, const void *rhs, size_t count);//
 
 char	*ft_strchr(const char *str, int c);//
 char	*ft_strrchr(const char *str, int c);//
@@ -60,5 +60,19 @@ void	ft_putchar_fd(char c, int fd);//
 void	ft_putstr_fd(char *s, int fd);//
 void	ft_putendl_fd(char *s, int fd);//
 void	ft_putnbr_fd(int n, int fd);//
+
+// Inclusion de ft_printf
+# include	<stdarg.h>
+# include	<stdio.h>
+
+int	ft_printf(const char *str, ...);
+int	checkstr(va_list largs, char c);
+int	ft_print_char(int c);
+int	ft_print_str(char *str);
+int	ft_putnbr_b10(int nb);
+int	ft_putnbr_ub10(unsigned int nb);
+int	ft_putnbr_b16(unsigned int nb, char format);
+int	ft_putnbr_addb16(unsigned long long nb, char format);
+int	ft_print_pourcent(void);
 
 #endif

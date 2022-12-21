@@ -39,6 +39,16 @@ SRCS	=	ft_atoi.c \
 			ft_strmapi.c \
 			ft_striteri.c \
 			ft_split.c \
+			./ft_printf/ft_printf.c\
+			./ft_printf/utils_ft_printf/ft_print_char.c\
+			./ft_printf/utils_ft_printf/ft_print_str.c\
+			./ft_printf/utils_ft_printf/ft_putnbr_b10.c\
+			./ft_printf/utils_ft_printf/ft_putnbr_b16.c\
+			./ft_printf/utils_ft_printf/ft_putnbr_addb16.c\
+			./ft_printf/utils_ft_printf/ft_print_pourcent.c\
+			./ft_printf/utils_ft_printf/ft_putnbr_ub10.c\
+			./ft_printf/utils_ft_printf/ft_checkstr.c\
+
 
 OBJS	= ${SRCS:.c=.o}
 
@@ -50,7 +60,7 @@ AR = ar rcs
 
 RM	= rm -f
 
-CFLAGS	= -Wall -Werror -Wextra
+CFLAGS	= -Wall -Werror -Wextra -I./
 
 #***** Colors *****#
 
